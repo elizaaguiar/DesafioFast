@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioFullstack", "DesafioFullstack\DesafioFullstack.csproj", "{85F0520E-5D0F-42F4-A4BE-E27C6879730A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{85F0520E-5D0F-42F4-A4BE-E27C6879730A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85F0520E-5D0F-42F4-A4BE-E27C6879730A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85F0520E-5D0F-42F4-A4BE-E27C6879730A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85F0520E-5D0F-42F4-A4BE-E27C6879730A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {49BB12FC-2274-4FDE-A38A-7546B8147BE5}
+	EndGlobalSection
+EndGlobal

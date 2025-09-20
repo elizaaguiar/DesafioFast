@@ -1,0 +1,21 @@
+<div class="items flex flex-col">
+    <div class="items-infos">
+        <p>
+            {{title()}}
+        </p>
+        <header>
+            {{name()}}
+        </header>
+        @if (description() != null) {
+            <h1 class="font-[500]">
+                {{description()}}
+            </h1>
+        }
+        @if (executionDate() != null) {
+            <span>
+                {{executionDate() | date}}
+            </span>
+        }
+    </div>
+    <ng-content #button></ng-content>
+</div>

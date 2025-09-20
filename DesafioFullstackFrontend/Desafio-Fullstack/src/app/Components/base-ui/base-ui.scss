@@ -1,0 +1,37 @@
+.navBar {
+    height: 20vh;
+    background-color: #5da4a4;
+    background-image: url("/bg-header-desktop.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+}
+.base-span{
+    outline: none;
+    padding: 1vh;
+    color: white;
+    font-size: 10px;
+    background-color: #5da4a4;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 12px;
+}
+.base-span:hover{
+    background-color: #399797;
+    color: white;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.base-span:active{
+    background-color: #399797;
+    color: white;
+}
+@media(max-width: 700px) {
+    .navBar {
+        width: 100%;
+        height: 20vh;
+        background-color: #5da4a4;
+        background-image: url("/bg-header-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}

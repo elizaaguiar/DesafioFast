@@ -1,0 +1,9 @@
+<div class="flex flex-col gap-5">
+    @for (workshop of workshops(); track $index) {
+<app-item-ui [name]="workshop.name" [description]="workshop.description" [executionDate]="workshop.executionDate">
+    <button #button class="workshop-button" (click)="navigateToAttendance(workshop.guid)">
+        ACESSAR WORKSHOP
+    </button>
+</app-item-ui>
+}
+</div>

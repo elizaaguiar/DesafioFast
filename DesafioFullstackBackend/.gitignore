@@ -1,0 +1,42 @@
+# Ficheiros de sistema operativo
+.DS_Store
+Thumbs.db
+
+# Ficheiros de IDEs
+.idea/
+.vscode/
+
+### .NET / VISUAL STUDIO ###
+
+# Pastas de build
+[Bb]in/
+[Oo]bj/
+
+# Ficheiros gerados pelo Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ficheiros de build e publicação
+*.cache
+*.exe
+*.dll
+*.pdb
+*.nupkg
+*.nuget.props
+*.nuget.targets
+publish/
+**/wwwroot/dist
+
+# Ficheiros de configuração local que podem conter segredos
+appsettings.Development.json
+secrets.json
+
+# Cache do Resharper
+_ReSharper*/
+*.[Rr]esharper
+
+# Pasta de pacotes Nuget
+packages/

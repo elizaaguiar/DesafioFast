@@ -1,0 +1,28 @@
+.workshop-button {
+    outline: none;
+    padding: 1vh;
+    color: rgb(120, 172, 175);
+    font-size: 10px;
+    background-color: #eef6f6;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.workshop-button:hover{
+    background-color: #399797;
+    color: white;
+    transition: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+.workshop-button:active{
+    background-color: #399797;
+    color: white;
+}
+
+@media(max-width: 500px) {
+    .workshop-button {
+        outline: none;
+        padding: 1vh;
+        color: rgb(120, 172, 175);
+        font-size: 8px;
+    }
+}
