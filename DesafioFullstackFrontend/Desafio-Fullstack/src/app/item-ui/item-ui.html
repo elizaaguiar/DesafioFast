@@ -8,14 +8,17 @@
         </header>
         @if (description() != null) {
             <h1 class="font-[500]" [title]="description()">
-                {{description()! | truncate: 75}}
+                {{description()}}
             </h1>
         }
         @if (executionDate() != null) {
-            <span>
+            <span class="items-infos-span">
                 {{executionDate() | date}}
             </span>
         }
     </div>
-    <ng-content #button></ng-content>
+  
+        <ng-content #button></ng-content>
+
+    
 </div>

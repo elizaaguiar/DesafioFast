@@ -1,10 +1,10 @@
 import { DatePipe } from '@angular/common';
 import { Component, input, Pipe } from '@angular/core';
-import { TruncatePipe } from './truncate.pipe';
+
 
 @Component({
   selector: 'app-item-ui',
-  imports: [DatePipe, TruncatePipe],
+  imports: [DatePipe],
   templateUrl: './item-ui.html',
   styleUrl: './item-ui.scss'
 })

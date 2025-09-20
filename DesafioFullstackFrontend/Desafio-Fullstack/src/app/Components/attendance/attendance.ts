@@ -3,7 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { AttendanceService } from '../../Services/attendance.services';
 import { Collaborator } from '../../Models/collaborator.model';
 import { tap } from 'rxjs';
-import { ItemUi } from '../item-ui/item-ui';
+import { ItemUi } from '../../item-ui/item-ui';
 
 @Component({
   selector: 'app-attendance',

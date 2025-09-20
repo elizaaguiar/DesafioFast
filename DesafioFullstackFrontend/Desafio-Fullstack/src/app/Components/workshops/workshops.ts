@@ -8,7 +8,7 @@ import { DatePipe } from "@angular/common";
 import { AttendanceService } from '../../Services/attendance.services';
 import { Collaborator } from '../../Models/collaborator.model';
 import { Router } from '@angular/router';
-import { ItemUi } from '../item-ui/item-ui';
+import { ItemUi } from '../../item-ui/item-ui';
 
 @Component({
   selector: 'app-workshops',
