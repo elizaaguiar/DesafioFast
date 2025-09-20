@@ -1,7 +1,7 @@
 import { Component, inject } from '@angular/core';
 import { CollaboratorService } from '../../Services/collaborator.services';
 import { Collaborator } from '../../Models/collaborator.model';
-import { ItemUi } from '../../item-ui/item-ui';
+import { ItemUi } from '../item-ui/item-ui';
 
 @Component({
   selector: 'app-collaborators',

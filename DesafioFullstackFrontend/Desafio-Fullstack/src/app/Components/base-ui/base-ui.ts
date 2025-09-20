@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { ItemUi } from '../../item-ui/item-ui';
+import { ItemUi } from '../item-ui/item-ui';
 import { Router } from '@angular/router';
 
 @Component({

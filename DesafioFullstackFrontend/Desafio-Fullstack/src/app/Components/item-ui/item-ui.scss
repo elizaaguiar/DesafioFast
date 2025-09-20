@@ -2,7 +2,6 @@
     background-color: #ffffff;
     box-shadow: 0 5px 15px -3px rgba(1, 122, 136, 0.1);
     width: 50vw;
-    max-height: 20vh;
     padding: 10px;
 }
 .items-infos {
@@ -10,6 +9,7 @@
     font-family: "Red Hat Display", sans-serif;
     font-size: 12px;
     margin: 1vh 5vh 1vh 1vh;
+    text-align: justify;
 }
 .items-infos header {
     font-size: 12px;
@@ -25,6 +25,7 @@
         color: rgb(120, 172, 175);
         font-family: "Red Hat Display", sans-serif;
         font-size: 10px;
+        text-align: start;
     }
     .items-infos header {
         font-size: 12px;

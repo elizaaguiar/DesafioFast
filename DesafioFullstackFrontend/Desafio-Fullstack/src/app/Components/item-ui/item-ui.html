@@ -7,8 +7,8 @@
             {{name()}}
         </header>
         @if (description() != null) {
-            <h1 class="font-[500]">
-                {{description()}}
+            <h1 class="font-[500]" [title]="description()">
+                {{description()! | truncate: 75}}
             </h1>
         }
         @if (executionDate() != null) {
