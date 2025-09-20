@@ -4,6 +4,9 @@ import { Collaborators } from './Components/collaborators/collaborators';
 import { Attendance } from './Components/attendance/attendance';
 
 export const routes: Routes = [
+    {   
+        path: "", redirectTo: "workshops", pathMatch: "full"
+    },
     {
         path: "workshops", component: Workshops
     },
