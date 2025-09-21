@@ -37,7 +37,7 @@ namespace DesafioFullstack.Repository
         }
         public async Task<List<Collaborator>> GetAll()
         {
-            return await _context.Collaborator.ToListAsync();
+            return await _context.Collaborator.Where(c => c.RemovedAt == null).ToListAsync();
         }
         public void Delete(Collaborator collaborator)
         {
