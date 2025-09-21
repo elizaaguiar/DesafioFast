@@ -6,9 +6,9 @@ namespace DesafioFullstack.Entity
 {
     public class Collaborator : Base
     {
-        public string Name { get; set; } = default!; 
+        [Required]
+        public string Name { get; set; } = default!;
 
-        // public ICollection<AttendanceList> AttendancesLists { get; set; } = default!;
+         public string PasswordHash { get; set; } = default!;
     };
-
 }

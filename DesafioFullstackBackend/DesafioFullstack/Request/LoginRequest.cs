@@ -1,8 +1,8 @@
 namespace DesafioFullstack.Request
 {
-    public class UpdateCollaboratorRequest
+    public class LoginRequest
     {
         public string Name { get; set; } = default!;
-        public Guid Guid { get; set; }
+        public string Password { get; set; } = default!;
     }
 }

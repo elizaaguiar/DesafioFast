@@ -6,7 +6,7 @@ namespace DesafioFullstack.AppDbContext
 {
     public class DbContexto : DbContext
     {
-        public DbContexto(){}
+        public DbContexto(DbContextOptions<DbContexto> options) : base(options){}
         public DbSet<Collaborator> Collaborator { get; set; } = default!;
         public DbSet<Workshop> Workshop { get; set; } = default!;
         public DbSet<Attendance> Attendance { get; set; } = default!;

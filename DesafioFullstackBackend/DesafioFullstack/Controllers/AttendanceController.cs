@@ -1,8 +1,6 @@
-using System.Threading.Tasks;
-using DesafioFullstack.DTOs;
-using DesafioFullstack.Entity;
-using DesafioFullstack.Interfaces;
+
 using DesafioFullstack.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DesafioFullstack.Controllers
@@ -18,6 +16,7 @@ namespace DesafioFullstack.Controllers
             _attendance = attendance;
         }
         [HttpGet("{workshopGuid}")]
+        [AllowAnonymous]
         public async Task<IActionResult> GetAll(Guid workshopGuid)
         {
             return Ok( await _attendance.Get(workshopGuid));

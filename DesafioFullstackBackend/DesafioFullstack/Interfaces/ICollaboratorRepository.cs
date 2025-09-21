@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using DesafioFullstack.DTOs;
 using DesafioFullstack.Entity;
+using DesafioFullstack.Request;
 
 namespace DesafioFullstack.Interfaces
 {
@@ -11,7 +9,8 @@ namespace DesafioFullstack.Interfaces
         void Create(Collaborator collaborator);
         void Delete(Collaborator collaborator);
         void Update(Collaborator collaborator);
-        Collaborator? SearchCollaborator(string Name);        
+        Task<Collaborator> GetByUsernameAndPassword(LoginRequest loginRequest);
+        Collaborator? SearchCollaborator(string Name);
         Task<List<Collaborator>> GetAll();
         Task<Collaborator> GetByGuid(Guid guid);
     }

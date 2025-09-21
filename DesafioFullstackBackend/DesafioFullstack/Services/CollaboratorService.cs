@@ -1,4 +1,3 @@
-using System.Threading.Tasks;
 using AutoMapper;
 using DesafioFullstack.DTOs;
 using DesafioFullstack.Entity;
@@ -52,6 +51,11 @@ namespace DesafioFullstack.Services
         {
             var collaborator = await _collaboratorRepository.GetAll();
             return _mapper.Map<List<CollaboratorDTO>>(collaborator);
+        }
+        public async Task<Collaborator> GetByUsernameAndPassword(LoginRequest loginRequest)
+        {
+            var collaborator = await _collaboratorRepository.GetByUsernameAndPassword(loginRequest);
+            return _mapper.Map<Collaborator>(collaborator);
         }
     }
 }

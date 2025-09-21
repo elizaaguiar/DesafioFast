@@ -17,28 +17,32 @@ namespace DesafioFullstack.Seed
                     Id = 1,
                     Guid = Guid.Parse("d3f1a2b4-5c6d-7e8f-9012-3456789abfde"),
                     CreatedAt = DateTime.Parse("20/09/2025"),
-                    Name = "Colaborador 1"
+                    Name = "Colaborador 1",
+                    PasswordHash = "xAPNjP>$gsO,myR{"
                 },
                 new Collaborator
                 {
                     Id = 2,
                     Guid = Guid.Parse("d3f1a2b4-5c6d-7e8f-9012-3456789abfd1"),
                     CreatedAt = DateTime.Parse("21/09/2025"),
-                    Name = "Colaborador 2"
+                    Name = "Colaborador 2",
+                    PasswordHash = "7?{+Z5tge(^(x4=h"
                 },
                 new Collaborator
                 {
                     Id = 3,
                     Guid = Guid.Parse("d3f1a2b4-5c6d-7e8f-9012-3456789abfd2"),
                     CreatedAt = DateTime.Parse("22/09/2025"),
-                    Name = "Colaborador 3"
+                    Name = "Colaborador 3",
+                    PasswordHash = "3*M1/P^H$E1FsIUN" 
                 },
                 new Collaborator
                 {
                     Id = 4,
                     Guid = Guid.Parse("d3f1a2b4-5c6d-7e8f-9012-3456789abfd3"),
                     CreatedAt = DateTime.Parse("23/09/2025"),
-                    Name = "Colaborador 4"
+                    Name = "Colaborador 4",
+                    PasswordHash = "s&W:mdI*}tV7f{]6"
                 }
             );
         }

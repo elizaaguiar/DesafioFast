@@ -15,5 +15,7 @@ public class MappingProfile : Profile
         CreateMap<CreateCollaboratorRequest, Collaborator>();
         CreateMap<UpdateCollaboratorRequest, Collaborator>();
         CreateMap<UpdateWorkshopRequest, Workshop>();
+        CreateMap<LoginRequest, Collaborator>();
+        CreateMap<Collaborator, LoginRequest>();
     }
 }

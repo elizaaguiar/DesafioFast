@@ -1,9 +1,9 @@
+
 using DesafioFullstack.AppDbContext;
-using DesafioFullstack.DTOs;
 using DesafioFullstack.Entity;
 using DesafioFullstack.Interfaces;
+using DesafioFullstack.Request;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Update.Internal;
 
 namespace DesafioFullstack.Repository
 {
@@ -16,6 +16,7 @@ namespace DesafioFullstack.Repository
         }
         public void Create(string name, int id)
         {
+            
             var newCollaborator = new Collaborator
             {
                 Name = name,
@@ -52,6 +53,12 @@ namespace DesafioFullstack.Repository
         public async Task<Collaborator> GetByGuid(Guid guid)
         {
             return await _context.Collaborator.FirstOrDefaultAsync(c => c.Guid == guid && c.RemovedAt == null);
+        }
+
+        public async Task<Collaborator> GetByUsernameAndPassword(LoginRequest loginRequest)
+        {
+            var collaborator = await _context.Collaborator.Where(l => l.Name == loginRequest.Name && l.PasswordHash == loginRequest.Password).FirstOrDefaultAsync();
+            return collaborator;
         }
     }
 }
